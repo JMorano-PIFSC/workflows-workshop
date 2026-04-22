@@ -1,0 +1,30 @@
+---
+title: "Example Quarto Document"
+author: "Janelle Morano"
+date: today()
+format: html
+params:
+  commname: "Mahimahi"
+  species: "*Corhyphaena hippurus*"
+
+---
+
+# Header 1 is Here
+Stuff goes here, and you can refer to a parameter like this: `r params$commname` and `r params$species`.
+
+## A second header
+more stuff goes here
+
+# Header 2 now
+even more stuff goes here
+
+```{r}
+#| label: ex-chunk
+#| eval: false
+#| warning: false
+#| echo: false
+#| fig-cap: This is my figure caption.
+#| fig-alt: This is my alternative text.
+#| tbl-cap: This is my table caption.
+x <- 1 + 1
+```
